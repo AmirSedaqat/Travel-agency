@@ -1,24 +1,87 @@
 import React from "react";
+//Material imports
 import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
+import Box from "@mui/material/Box";
+import Rating from "@mui/material/Rating";
+import { createTheme, ThemeProvider } from "@mui/material";
+//@mui/icons-material imports
+import { AccessTime } from "@mui/icons-material";
 
+const customizedTheme = createTheme({
+    components: {
+        MuiTypography: {
+            variants: [
+                {
+                    props: {
+                        variant: "body2",
+                    },
+                    style: {
+                        fontSize: 14,
+                    },
+                },
+                {
+                    props: {
+                        variant: "body3",
+                    },
+                    style: {
+                        fontSize: 12,
+                    },
+                },
+            ],
+        },
+    },
+});
 const TourCard = () => {
     return (
         <Grid item xs={3}>
-            <Paper elevation={3}>
-                <img className="imgCard" src="https://www.irandiamondtour.com/Content/Images/Tomb%20of%20Ferdowsi5.jpg" alt="masuleh" />
-                <Typography variant="h6">Visiting Tomb of Ferdowsi</Typography>
-            </Paper>
+            <ThemeProvider theme={customizedTheme}>
+                <Paper elevation={3}>
+                    <img className="imgCard" src="https://www.irandiamondtour.com/Content/Images/Tomb%20of%20Ferdowsi5.jpg" alt="masuleh" />
+                    <Box paddingX={1}>
+                        <Typography variant="h6" component="h1">
+                            Visiting Tomb of Ferdowsi
+                        </Typography>
+                        <Box
+                            sx={{
+                                display: "flex",
+                                alignItems: "center",
+                            }}
+                        >
+                            <AccessTime sx={{ width: "13px" }} />
+                            <Typography variant="body2" component="p" marginLeft={0.5}>
+                                5 Hours
+                            </Typography>
+                        </Box>
+                        <Box
+                            sx={{
+                                display: "flex",
+                                alignItems: "center",
+                            }}
+                            marginTop={3}
+                            marginBottom={1.5}
+                        >
+                            <Rating name="read-only" value={4.5} readOnly precision={0.5} size="small" />
+                            <Typography variant="body2" component="p" marginLeft={0.5}>
+                                4.5
+                            </Typography>
+                            <Typography variant="body3" component="p" marginLeft={2.5}>
+                                (623 reviews)
+                            </Typography>
+                        </Box>
+                        <hr />
+                        <Box>
+                            <Typography variant="h6" component="h3" padding={1}>
+                                From 769$
+                            </Typography>
+                        </Box>
+                    </Box>
+                </Paper>
+            </ThemeProvider>
         </Grid>
     );
 };
 
 export default TourCard;
-// Lake Chort  http://upload.wikimedia.org/wikipedia/commons/5/5c/Lake_miansheh.jpg
-// Tomb of Ferdowsi https://www.irandiamondtour.com/Content/Images/Tomb%20of%20Ferdowsi5.jpg
-// Masuleh  https://images.unsplash.com/photo-1580060366892-f079c2e1fa17?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80
-// Bisheh Waterfall https://greetingiran.com/wp-content/uploads/2017/06/bishe-waterfall.jpg
-// Chabahar Martian Mountains https://blog.okcs.com/wp-content/uploads/2018/12/434579_0_default_800x533.jpg
-// Nasir al-Mulk Mosque http://gravity.ir/wp-content/uploads/2014/02/Nasir-Al-Mulk-Mosque.jpg
-// village Kandovan https://www.eligasht.com/Blog/wp-content/uploads/2017/05/kandovan.jpg
+
