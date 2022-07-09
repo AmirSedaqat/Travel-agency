@@ -10,7 +10,7 @@ import { createTheme, ThemeProvider } from "@mui/material";
 import { AccessTime } from "@mui/icons-material";
 
 const customizedTheme = createTheme({
-    components: {
+       components: {
         MuiTypography: {
             variants: [
                 {
@@ -33,15 +33,15 @@ const customizedTheme = createTheme({
         },
     },
 });
-const TourCard = () => {
+const TourCard = ({ tourProp }) => {
     return (
         <Grid item xs={3}>
             <ThemeProvider theme={customizedTheme}>
                 <Paper elevation={3}>
-                    <img className="imgCard" src="https://www.irandiamondtour.com/Content/Images/Tomb%20of%20Ferdowsi5.jpg" alt="masuleh" />
+                    <img className="imgCard" src={tourProp.image} alt={tourProp.name} />
                     <Box paddingX={1}>
                         <Typography variant="h6" component="h1">
-                            Visiting Tomb of Ferdowsi
+                            {tourProp.name}
                         </Typography>
                         <Box
                             sx={{
@@ -51,7 +51,7 @@ const TourCard = () => {
                         >
                             <AccessTime sx={{ width: "13px" }} />
                             <Typography variant="body2" component="p" marginLeft={0.5}>
-                                5 Hours
+                                {tourProp.duration} Hours
                             </Typography>
                         </Box>
                         <Box
@@ -62,18 +62,18 @@ const TourCard = () => {
                             marginTop={3}
                             marginBottom={1.5}
                         >
-                            <Rating name="read-only" value={4.5} readOnly precision={0.5} size="small" />
+                            <Rating name="read-only" value={tourProp.rating} readOnly precision={0.1} size="small" />
                             <Typography variant="body2" component="p" marginLeft={0.5}>
-                                4.5
+                                {tourProp.rating}
                             </Typography>
                             <Typography variant="body3" component="p" marginLeft={2.5}>
-                                (623 reviews)
+                                ({tourProp.numberOfReviews} reviews)
                             </Typography>
                         </Box>
                         <hr />
                         <Box>
                             <Typography variant="h6" component="h3" padding={1}>
-                                From 769$
+                                From ${tourProp.price}
                             </Typography>
                         </Box>
                     </Box>
@@ -84,4 +84,3 @@ const TourCard = () => {
 };
 
 export default TourCard;
-
