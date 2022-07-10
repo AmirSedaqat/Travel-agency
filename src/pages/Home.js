@@ -10,7 +10,7 @@ const Home = () => {
         <div>
             <Container sx={{ marginY: 5 }}>
                 {cities.map((city) => (
-                    <>
+                    <div key={city.id}>
                         <Typography variant="h4" component="h2" marginTop={5} marginBottom={3}>
                             {city.name}
                         </Typography>
@@ -20,7 +20,7 @@ const Home = () => {
                                 <TourCard tourProp={tour} key={index} />
                             ))}
                         </Grid>
-                    </>
+                    </div>
                 ))}
             </Container>
         </div>
