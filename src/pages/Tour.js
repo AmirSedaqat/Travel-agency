@@ -1,6 +1,14 @@
-import { Typography, Container, Box } from "@mui/material";
-import Accordian from "../components/Accordian";
+//MUI
+import Paper from "@mui/material/Paper";
+import Typography from "@mui/material/Typography";
+import Container from "@mui/material/Container";
+import Box from "@mui/material/Box";
+import BottomNavigation from "@mui/material/BottomNavigation";
+
+//Components
 import ImageCollage from "../components/ImageCollage";
+import Accordian from "../components/Accordian";
+import KeepMountedModal from "../components/Modal";
 
 const Tour = () => {
     return (
@@ -22,12 +30,18 @@ const Tour = () => {
                         and clothes. If you have never had the experience of traveling to the beautiful country of Iran, contact us.
                     </Typography>
                 </Box>
-                <Box>
+                <Box marginBottom={10}>
                     <Typography variant="h6" component="h4" marginTop={4} marginBottom={1}>
                         Frequently Asked Questions
                     </Typography>
                     <Accordian />
                 </Box>
+
+                    <BottomNavigation>
+                <Paper sx={{padding:'10px', position: "fixed", bottom: 0, left: 0, right: 0, display: "flex", justifyContent: "center" }} elevation={10}>
+                        <KeepMountedModal />
+                </Paper>
+                    </BottomNavigation>
             </Container>
         </div>
     );
