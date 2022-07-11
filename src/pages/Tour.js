@@ -8,7 +8,7 @@ import BottomNavigation from "@mui/material/BottomNavigation";
 //Components
 import ImageCollage from "../components/ImageCollage";
 import Accordian from "../components/Accordian";
-import KeepMountedModal from "../components/Modal";
+import KeepModal from "../components/KeepModal";
 
 const Tour = () => {
     return (
@@ -39,7 +39,7 @@ const Tour = () => {
 
                     <BottomNavigation>
                 <Paper sx={{padding:'10px', position: "fixed", bottom: 0, left: 0, right: 0, display: "flex", justifyContent: "center" }} elevation={10}>
-                        <KeepMountedModal />
+                        <KeepModal/>
                 </Paper>
                     </BottomNavigation>
             </Container>

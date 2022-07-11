@@ -10,14 +10,14 @@ const Home = () => {
         <div>
             <Container sx={{ marginY: 5 }}>
                 {cities.map((city) => (
-                    <div key={city.id}>
+                    <div key={city.id} >
                         <Typography variant="h4" component="h2" marginTop={5} marginBottom={3}>
                             {city.name}
                         </Typography>
 
                         <Grid container spacing={5}>
                             {city.tours.map((tour, index) => (
-                                <TourCard tourProp={tour} key={index} />
+                                <TourCard tourProp={tour} key={index}/>
                             ))}
                         </Grid>
                     </div>

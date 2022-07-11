@@ -8,9 +8,10 @@ import Rating from "@mui/material/Rating";
 import { createTheme, ThemeProvider } from "@mui/material";
 //@mui/icons-material imports
 import { AccessTime } from "@mui/icons-material";
+import { Link } from "react-router-dom";
 
 const customizedTheme = createTheme({
-       components: {
+    components: {
         MuiTypography: {
             variants: [
                 {
@@ -34,11 +35,15 @@ const customizedTheme = createTheme({
     },
 });
 const TourCard = ({ tourProp }) => {
+   
     return (
         <Grid item xs={3}>
             <ThemeProvider theme={customizedTheme}>
                 <Paper elevation={3}>
-                    <img className="imgCard" src={tourProp.image} alt={tourProp.name} />
+                <Link to={`/${tourProp.id}`}>
+
+                     <img className="imgCard" src={tourProp.image} alt={tourProp.name}  />
+                </Link>
                     <Box paddingX={1}>
                         <Typography variant="h6" component="h1">
                             {tourProp.name}

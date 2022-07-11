@@ -1,4 +1,5 @@
 import * as React from "react";
+//MUI
 import { styled, alpha } from "@mui/material/styles";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
@@ -8,6 +9,10 @@ import Typography from "@mui/material/Typography";
 import InputBase from "@mui/material/InputBase";
 import MenuIcon from "@mui/icons-material/Menu";
 import SearchIcon from "@mui/icons-material/Search";
+//react-router-dom
+import { Link } from "react-router-dom";
+//images
+import logoL from '../assets/logoL.png'
 
 const Search = styled("div")(({ theme }) => ({
     position: "relative",
@@ -59,7 +64,7 @@ const SearchAppBar = () => {
                         <MenuIcon />
                     </IconButton>
                     <Typography variant="h6" noWrap component="div" sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}>
-                        SEDAQAT Tourism Tour
+                       <Link to='/'> <img src={logoL} alt="Logo Large"/> </Link>
                     </Typography>
                     <Search>
                         <SearchIconWrapper>
