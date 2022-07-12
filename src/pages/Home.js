@@ -5,9 +5,12 @@ import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import cities from "../data.json";
 import { Typography } from "@mui/material";
+import SliderSlick from "../components/SliderSlick/SliderSlick";
+
 const Home = () => {
     return (
         <div>
+            <SliderSlick/>
             <Container sx={{ marginY: 5 }}>
                 {cities.map((city) => (
                     <div key={city.id} >
