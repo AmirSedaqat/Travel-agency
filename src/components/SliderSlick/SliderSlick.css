@@ -1,11 +1,11 @@
 .imgSlider {
     width: 90%;
-    height:400px;
+    height: 400px;
     margin: auto auto;
     border-radius: 10px;
 }
-.slick-dots{
-    display:block;
+.slick-dots {
+    display: block;
 }
 .slider-container {
     width: 80%;
@@ -13,9 +13,12 @@
     margin: 0 auto;
     margin-top: 50px;
     margin-bottom: 150px;
-    
 }
-.slider-content{
+.slick-prev:before,
+.slick-next:before {
+    color: rgb(222, 84, 60);
+}
+.slider-content {
     overflow: hidden;
 }
 .slick-slide > div {
