@@ -7,6 +7,7 @@ import Tour from "./pages/Tour";
 
 const App = () => {
     return (
+        <div className="App">
         <BrowserRouter>
             <SearchAppBar />
             <Routes>
@@ -14,6 +15,8 @@ const App = () => {
                 <Route path="/:id" element={<Tour />} />
             </Routes>
         </BrowserRouter>
+
+        </div>
     );
 };
 
