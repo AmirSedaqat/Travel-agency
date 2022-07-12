@@ -37,7 +37,7 @@ const customizedTheme = createTheme({
 const TourCard = ({ tourProp }) => {
    
     return (
-        <Grid item xs={3}>
+        <Grid item xs={4}>
             <ThemeProvider theme={customizedTheme}>
                 <Paper elevation={3}>
                 <Link to={`/${tourProp.id}`}>
