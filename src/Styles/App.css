@@ -1,0 +1,24 @@
+.App{
+    background-color: rgb(241, 241, 241);
+    height:2500px;
+}
+a{
+    text-decoration: none;
+}
+.formLink{
+    color:white;
+    border-radius: 7px;
+    border: 1px solid white;
+    padding:7px;
+    margin:0 10px;
+    transition: all .2s linear;
+}
+.formLink:hover{
+    background-color: rgba(201, 201, 201, 0.2);
+}
+.imgCard {
+    width: 100%;
+    height: 9rem;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}

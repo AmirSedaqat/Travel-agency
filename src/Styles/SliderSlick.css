@@ -1,0 +1,40 @@
+/* rgb(222,84,60) */
+/* rgb(222,84,60) */
+/* rgb(222,84,60) */
+
+
+.imgSlider {
+    width: 90%;
+    height: 400px;
+    margin: auto auto;
+    border-radius: 10px;
+}
+.slick-dots {
+    display: block;
+}
+.slider-container {
+    width: 80%;
+    height: 400px;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 150px;
+}
+.slick-prev:before,
+.slick-next:before {
+    color: rgb(222, 84, 60);
+}
+.slick-dots li button:before {
+    color:rgb(222, 84, 60);
+    opacity: .30;
+}
+.slick-dots li.slick-active button:before{
+    color:rgb(222, 84, 60);
+    opacity: 1;
+}
+
+.slider-content {
+    overflow: hidden;
+}
+.slick-slide > div {
+    margin: 0 10px;
+}

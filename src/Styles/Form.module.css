@@ -1,0 +1,212 @@
+/* #07BC0C */
+/* rgb(222, 84, 60) */
+.container {
+    color: gainsboro;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    align-items: center;
+    position: relative;
+    top: -30px;
+}
+.formContainer {
+    border: 2px solid rgb(222, 84, 60);
+    border-radius: 15px;
+    padding: 30px 50px;
+    box-shadow: 0 5px 10px  rgb(140, 140, 140);
+    margin: 80px;
+    height: min-content;
+    background-color:rgb(175, 175, 175);
+}
+.header {
+    display: flex;
+    align-self: flex-start;
+    font-size: 2.5em;
+    margin-bottom: 25px;
+    margin-top: 5px;
+    color: rgb(222,84,60);
+}
+.formField {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    height: 70px;
+}
+.formField > label {
+    margin-bottom: 5px;
+    font-size: 0.9em;
+    color:white;
+}
+
+.formInput {
+    width: 300px;
+    height: 30px;
+    border-radius: 7px;
+    border: 2px solid silver;
+    padding: 0 10px;
+    transition: all 0.2s ease-in;
+}
+input {
+    outline: none;
+}
+
+.unCompleted {
+    width: 300px;
+    height: 30px;
+    border-radius: 7px;
+    border: 2px solid rgb(222, 84, 60);
+    padding: 0 10px;
+    transition: all 0.2s ease-in;
+}
+.successfully {
+    width: 300px;
+    height: 30px;
+    border-radius: 7px;
+    border: 2px solid rgb(12, 126, 33);
+    padding: 0 10px;
+    transition: all 0.2s ease-in;
+}
+.formField span {
+    background-color: rgb(222, 84, 60);
+    display: flex;
+    position: relative;
+    top: 7px;
+    width: max-content;
+    padding: 2px 10px;
+    font-size: 0.7em;
+    border-radius: 7px;
+    box-shadow: 0 0 5px 0 rgb(62, 62, 62);
+}
+.formField:focus,
+.unCompleted:focus {
+    outline: none;
+    border: 2px solid rgb(222, 84, 60);
+    line-height: 30px;
+    height: 30px;
+}
+.formField:nth-child(5) {
+    margin-bottom: 10px;
+}
+.checkBoxContainer {
+    display: flex;
+    flex-direction: row !important;
+    height: 20px !important;
+    align-items: flex-start;
+}
+.formField:nth-child(6) label {
+    color: rgb(222, 84, 60);
+    display: flex;
+    align-items: flex-end;
+}
+.formField:nth-child(6) {
+    margin-bottom: -10px;
+    margin-top: 20px;
+    display:flex;
+}
+.formField:nth-child(6) span {
+    margin-top: -4px;
+}
+input[type="checkbox"] {
+    margin: 0 20px;
+    width: 18px;
+    height: 18px;
+    border:2px solid rgb(222, 84, 60);
+    appearance: none;
+    border-radius: 4px;
+}
+input[type="checkbox"]:checked {
+    background-color: rgba(255, 38, 0, 0.551);
+    border: 2px solid rgb(170, 63, 44);
+}
+.formButtons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -20px;
+    width: 99%;
+}
+.formButtons button {
+    padding: 12px 15px;
+    background-color: rgb(222, 84, 60);
+    border-radius: 7px;
+    font-size: 1em;
+    cursor: pointer;
+    border: 1px solid rgb(222, 84, 60);
+    transition: all 0.2s linear;
+    color:white;
+}
+.formButtons button:hover {
+    background-color: white;
+    color: rgb(222, 84, 60);
+    border: 1px solid rgb(222, 84, 60);
+    outline-color: rgb(222, 84, 60);
+}
+.formButtons a {
+    text-decoration: none;
+    margin: 10px;
+    padding: 13px 20px;
+    font-size: 1em;
+    background-color: white;
+    color: rgb(222, 84, 60);
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all 0.2s linear;
+    border: 1px solid rgb(222, 84, 60);
+}
+.formButtons a:hover {
+    background-color: rgb(222, 84, 60);
+    color: white;
+    border: 1px solid rgb(222, 84, 60);
+}
+@media (max-width: 500px) {
+    .formContainer {
+        margin: 30px;
+        padding: 20px 45px;
+        width: 90%;
+    }
+    .header {
+        font-size: 2.3em;
+        margin-bottom: 25px;
+        margin-top: 15px;
+    }
+    .formField {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+        height: 80px;
+    }
+    .formField > label {
+        font-size: .87em;
+    }
+    .formField span {
+        top: 5px;
+        padding: 2px 8px;
+        font-size: 0.7em;
+    }
+    .formInput {
+        width: 100%;
+    }
+    .unCompleted {
+        width: 100%;
+    }
+    .successfully {
+        width: 100%;
+    }
+
+    .formButtons button {
+        padding: 10px 15px;
+        font-size: 0.9em;
+    }
+
+    .formButtons a {
+        padding: 10px 15px;
+        font-size: 0.9em;
+    }
+    .formField:nth-child(6) {
+        margin-bottom: -30px;
+        margin-top: -5px;
+    }
+    .formField:nth-child(6) span {
+        margin-top: -2px;
+    }
+}

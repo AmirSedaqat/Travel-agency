@@ -69,6 +69,9 @@ const SearchAppBar = () => {
                             <img src={travelGif} alt="Logo" style={{ height: "60px", position: "relative", top: "5px" }} /> <img src={logoL} alt="Logo Large" />{" "}
                         </Link>
                     </Typography>
+                    <Link to="/signup" className="formLink">
+                        SIGNUP | LOGIN
+                    </Link>
                     <Search>
                         <SearchIconWrapper>
                             <SearchIcon />
