@@ -3,8 +3,9 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { dataImage } from "./data";
-import "./SliderSlick.css";
+import "../../Styles/SliderSlick.css";
 import { Typography } from "@mui/material";
+
 const SliderSlick = () => {
     const settings = {
         dots: true,
