@@ -12,16 +12,18 @@ export default function DatePicker() {
 
     return (
         <Stack spacing={3}>
-            {window.innerWidth <= 600 ? (
-                <LocalizationProvider dateAdapter={AdapterDateFns} localeText={{ start: "Start", end: "Until" }}>
-                    <MobileDateRangePicker
+            {window.innerWidth < 600 ? (
+                <LocalizationProvider  dateAdapter={AdapterDateFns} localeText={{ start: "Start", end: "Until" }}>
+                    <MobileDateRangePicker 
                         value={value}
                         onChange={(newValue) => {
                             setValue(newValue);
                         }}
                         renderInput={(startProps, endProps) => (
                             <React.Fragment>
-                                <TextField {...startProps} />
+                                <TextField
+                                    {...startProps}
+                                />
                                 <Box sx={{ mx: 2 }}> to </Box>
                                 <TextField {...endProps} />
                             </React.Fragment>

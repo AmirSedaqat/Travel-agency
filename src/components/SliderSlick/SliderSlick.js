@@ -14,13 +14,13 @@ const SliderSlick = () => {
         slidesToScroll: 1,
         autoplay: true,
         speed: 1500,
-        autoplaySpeed: 4000,
-        cssEase: "linear",
+        autoplaySpeed: 3500,
+        cssEase: "ease-out",
     };
     return (
         <div className="slider-container">
-            <Typography variant="h3" component="h1">
-                Beautiful Iran
+            <Typography variant="h4" component="h4" sx={{textAlign:'left',padding:"10px",marginLeft:"30px"}}>
+            Beautiful Iran 
             </Typography>
             <Slider {...settings}>
                 {dataImage.map((item) => (

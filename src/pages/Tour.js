@@ -37,11 +37,9 @@ const Tour = () => {
                     <Accordian />
                 </Box>
 
-                    <BottomNavigation>
-                <Paper sx={{padding:'10px', position: "fixed", bottom: 0, left: 0, right: 0, display: "flex", justifyContent: "center" }} elevation={10}>
-                        <KeepModal/>
+                <Paper sx={{padding:'10px', position: "fixed", bottom: 0, left: 0, right: 0, display: "flex", justifyContent: "center",color:'white',backgroundColor:'#DE543C' }} elevation={10}>
+                        <KeepModal />
                 </Paper>
-                    </BottomNavigation>
             </Container>
         </div>
     );

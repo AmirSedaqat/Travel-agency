@@ -1,16 +1,15 @@
 import React from "react";
 import TourCard from "../components/TourCard";
-
+import SliderSlick from "../components/SliderSlick/SliderSlick";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import cities from "../data.json";
-import { Typography } from "@mui/material";
-import SliderSlick from "../components/SliderSlick/SliderSlick";
+import  Typography  from "@mui/material/Typography";
 
 const Home = () => {
     return (
-        <div>
-            <SliderSlick/>
+        <div style={{height:""}}>
+            <SliderSlick />
             <Container sx={{ marginY: 5 }}>
                 {cities.map((city) => (
                     <div key={city.id} >

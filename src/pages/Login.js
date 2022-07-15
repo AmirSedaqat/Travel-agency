@@ -66,7 +66,7 @@ const Login = () => {
                                 : !toched.password
                                 ? styles.formInput
                                 : !errors.password && toched.password
-                                ? styles.successfull
+                                ? styles.successfully
                                 : styles.unCompleted
                         }
                         type="password"
@@ -85,7 +85,7 @@ const Login = () => {
                 </div>
             </form>
 
-            <ToastContainer theme="dark" />
+            <ToastContainer theme="light" />
         </div>
     );
 };

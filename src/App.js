@@ -14,8 +14,8 @@ const App = () => {
             <SearchAppBar />
             <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="/:id" element={<Tour />} />
-                <Route path="/signup" element={<SignUp/>}/>
+                <Route path="/:name" element={<Tour />} />
+                <Route path="/signup" element={<SignUp />}/>
                 <Route path="/login" element={<Login/>}/>
             </Routes>
         </BrowserRouter>

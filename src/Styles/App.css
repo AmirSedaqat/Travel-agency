@@ -1,6 +1,6 @@
 .App{
     background-color: rgb(241, 241, 241);
-    height:2500px;
+    padding: 0 0 50px 0;
 }
 a{
     text-decoration: none;
@@ -11,10 +11,9 @@ a{
     border: 1px solid white;
     padding:7px;
     margin:0 10px;
-    transition: all .2s linear;
 }
 .formLink:hover{
-    background-color: rgba(201, 201, 201, 0.2);
+    background-color: rgba(255, 255, 255, 0.2);
 }
 .imgCard {
     width: 100%;
