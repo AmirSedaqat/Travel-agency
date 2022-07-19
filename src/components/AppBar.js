@@ -80,7 +80,7 @@ const SearchAppBar = () => {
 <Box className={styles.containerLink}>
 
                     <Link to="/" className={styles.Navlink}><HomeIcon /> <span>HOME</span> </Link>
-                    <a href="https://github.com/AmirSedaqat/Travel-agency.git" target="_blank" className={styles.Navlink}><GitHubIcon />  <span>GITHUB</span></a>
+                    <a href="https://github.com/AmirSedaqat/Travel-agency.git" target="_blank" rel="noreferrer noopener" className={styles.Navlink} ><GitHubIcon />  <span>GITHUB</span></a>
                     <Link to="/signup" className={styles.Navlink}><LoginIcon />  <span>SIGNUP  |  LOGIN</span></Link>
 
 </Box>

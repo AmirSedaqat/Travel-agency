@@ -24,23 +24,23 @@ const Footer = () => {
                         <img src={travelGif} alt="Logo" style={{ height: "60px" }} /> <img src={LOGOWEB} alt="Logo Large" />{" "}
                     </Box>
                     <Box className={styles.socialLink}>
-                        <a href="https://instagram.com"  rel="noopener">
+                        <a href="https://instagram.com" target="_blank" rel="noreferrer noopener">
                             <InstagramIcon />
                         </a>
-                        <a href="https://telegram.org" target="_blank">
+                        <a href="https://telegram.org" target="_blank" rel="noreferrer noopener">
                             <TelegramIcon />
                         </a>
-                        <a href="https://pinterest.com" target="_blank">
+                        <a href="https://pinterest.com" target="_blank" rel="noreferrer noopener">
                             <PinterestIcon />
                         </a>
-                        <a href="https://facebook.com" target="_blank">
+                        <a href="https://facebook.com" target="_blank" rel="noreferrer noopener">
                             <FacebookIcon />
                         </a>
                     </Box>
                 </Box>
                 <Box className={styles.content}>
                     <h4>ABOUT US</h4>
-                    <Typography varinat="p" component="p">
+                    <Typography varinat="p" component="p"  marginLeft={1}>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin varius gravida urna, sit amet placerat nunc pellentesque vitae. Interdum et malesuada fames ac ante ipsum primis
                         in faucibus. Nunc nulla est, finibus eu malesuada suscipit, vulputate non turpis. In ultricies.
                     </Typography>
