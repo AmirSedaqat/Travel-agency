@@ -1,14 +1,17 @@
 import React from "react";
-//Material imports
+//MUI
 import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import Rating from "@mui/material/Rating";
 import { createTheme, ThemeProvider } from "@mui/material";
-//@mui/icons-material imports
+//ICON MUI
 import { AccessTime } from "@mui/icons-material";
+// React-router-dom
 import { Link } from "react-router-dom";
+// Styles
+import styles from '../Styles/TourCard.module.css'
 
 const customizedTheme = createTheme({
     components: {
@@ -33,18 +36,26 @@ const customizedTheme = createTheme({
             ],
         },
     },
+    breakpoints: {
+        values: {
+            xs: 0,
+            sm: 500,
+            md: 900,
+            lg: 1200,
+            xl: 1536,
+        },
+    },
 });
-const TourCard = ({ tourProp }) => {
-   
-    return (
-        <Grid item xs={4}>
-            <ThemeProvider theme={customizedTheme}>
-                <Paper elevation={3}>
-                <Link to={`/${tourProp.id}`}>
 
-                     <img className="imgCard" src={tourProp.image} alt={tourProp.name}  />
-                </Link>
-                    <Box paddingX={1}>
+const TourCard = ({ tourProp }) => {
+    return (
+        <ThemeProvider theme={customizedTheme}>
+            <Grid item xs={12} sm={12} md={4}>
+                <Paper elevation={3} sx={{ ":hover": { boxShadow: "0 1px 10px gray" }, transition: "all .3s linear", overflow: "hidden" }}>
+                    <Link to={`/${tourProp.id}`}>
+                        <img className="imgCard" src={tourProp.image} alt={tourProp.name} />
+                    </Link>
+                    <Box paddingX={1} >
                         <Typography variant="h6" component="h1">
                             {tourProp.name}
                         </Typography>
@@ -65,17 +76,21 @@ const TourCard = ({ tourProp }) => {
                                 alignItems: "center",
                             }}
                             marginTop={3}
-                            marginBottom={1.5}
+                            marginBottom={2.5}
+                            className={styles.rating}
                         >
+                    {/* <ThemeProvider theme={typographyTheme} > */}
                             <Rating name="read-only" value={tourProp.rating} readOnly precision={0.1} size="small" />
-                            <Typography variant="body2" component="p" marginLeft={0.5}>
+                            <Typography variant="subtitle1" component="p" marginLeft={0.5}>
                                 {tourProp.rating}
+
                             </Typography>
+                    {/* </ThemeProvider> */}
                             <Typography variant="body3" component="p" marginLeft={2.5}>
                                 ({tourProp.numberOfReviews} reviews)
                             </Typography>
                         </Box>
-                        <hr />
+                        <hr style={{ borderTop: "1px solid black" }} />
                         <Box>
                             <Typography variant="h6" component="h3" padding={1}>
                                 From ${tourProp.price}
@@ -83,8 +98,8 @@ const TourCard = ({ tourProp }) => {
                         </Box>
                     </Box>
                 </Paper>
-            </ThemeProvider>
-        </Grid>
+            </Grid>
+        </ThemeProvider>
     );
 };
 

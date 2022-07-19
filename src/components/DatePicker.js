@@ -1,4 +1,5 @@
 import * as React from "react";
+// MUI
 import TextField from "@mui/material/TextField";
 import Box from "@mui/material/Box";
 import Stack from "@mui/material/Stack";
@@ -12,7 +13,7 @@ export default function DatePicker() {
 
     return (
         <Stack spacing={3}>
-            {window.innerWidth < 600 ? (
+            {window.innerWidth < 700 ? (
                 <LocalizationProvider  dateAdapter={AdapterDateFns} localeText={{ start: "Start", end: "Until" }}>
                     <MobileDateRangePicker 
                         value={value}

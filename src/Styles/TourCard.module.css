@@ -1,0 +1,16 @@
+.rating > span span {
+    margin: -4px;
+    font-size: 17px;
+}
+@media (max-width: 600px) {
+    .name > h1 {
+        font-size: 1.1rem;
+    }
+    .rating {
+        margin: 3px;
+    }
+    .rating > span span {
+        margin: -5px;
+        font-size: 14px;
+    }
+}

@@ -9,12 +9,17 @@ import Typography from "@mui/material/Typography";
 import InputBase from "@mui/material/InputBase";
 import MenuIcon from "@mui/icons-material/Menu";
 import SearchIcon from "@mui/icons-material/Search";
+import HomeIcon from '@mui/icons-material/Home';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LoginIcon from '@mui/icons-material/Login';
 //react-router-dom
 import { Link } from "react-router-dom";
 //images & gif
-import logoL from "../assets/logoL.png";
+import LOGOWEB from "../assets/LOGOWEB.png";
 import travelGif from "../assets/Travel.gif";
 
+//Styles
+import styles from '../Styles/AppBar.module.css'
 const Search = styled("div")(({ theme }) => ({
     position: "relative",
     borderRadius: theme.shape.borderRadius,
@@ -56,25 +61,35 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
         },
     },
 }));
+
+
+
 const SearchAppBar = () => {
     return (
-        <Box sx={{ flexGrow: 1 }}>
+        <Box sx={{ flexGrow: 1 ,display:"flex",justifyContent:"space-between",alignItems:"center"}}>
             <AppBar position="static" sx={{ backgroundColor: "rgb(222, 84, 60)" }}>
                 <Toolbar>
-                    <IconButton size="large" edge="start" color="inherit" aria-label="open drawer" sx={{ mr: 2 }}>
+                    <IconButton size="large" edge="start" color="inherit" aria-label="open drawer" sx={{ mr: 1 }} className={styles.menuIcon}>
                         <MenuIcon />
                     </IconButton>
-                    <Typography variant="h6" noWrap component="div" sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}>
+                    <Typography  variant="h6" noWrap component="div" sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}>
                         <Link to="/">
-                            <img src={travelGif} alt="Logo" style={{ height: "60px", position: "relative", top: "5px" }} /> <img src={logoL} alt="Logo Large" />{" "}
+                            <img src={travelGif} alt="Logo" style={{ height: "60px", position: "relative", top: "5px" }} className={styles.logoL} /> <img className={styles.sedaghatTravelAgency} src={LOGOWEB} alt="Logo Large" />
                         </Link>
                     </Typography>
-                    <Link to="/signup" className="formLink">SIGNUP  |  LOGIN</Link>
-                    <Search>
-                        <SearchIconWrapper>
+<Box className={styles.containerLink}>
+
+                    <Link to="/" className={styles.Navlink}><HomeIcon /> <span>HOME</span> </Link>
+                    <a href="https://github.com/AmirSedaqat/Travel-agency.git" target="_blank" className={styles.Navlink}><GitHubIcon />  <span>GITHUB</span></a>
+                    <Link to="/signup" className={styles.Navlink}><LoginIcon />  <span>SIGNUP  |  LOGIN</span></Link>
+
+</Box>
+                    <Link to="/"><img src={travelGif} alt="Logo" className={styles.logoM}/></Link>
+                    <Search className={styles.search}>
+                        <SearchIconWrapper className={styles.icon}>
                             <SearchIcon />
                         </SearchIconWrapper>
-                        <StyledInputBase placeholder="Search…" inputProps={{ "aria-label": "search" }} />
+                        <StyledInputBase placeholder="Search…" inputProps={{ "aria-label": "search" }} className={styles.input}/>
                     </Search>
                 </Toolbar>
             </AppBar>

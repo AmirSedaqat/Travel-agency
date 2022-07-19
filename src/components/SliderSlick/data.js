@@ -2,7 +2,7 @@ export const dataImage = [
     { title: "Aali Qapu Mansion", urls: "https://images.kojaro.com/2020/11/ef218303-02ab-4e7b-bd88-72fcc789b97f.jpg" },
     { title: "Eram Garden", urls: "https://images.kojaro.com/2020/9/4b9a0129-278c-4838-9ed5-7d647d75d299.jpg" },
     { title: "Badab Surat Springs", urls: "https://images.kojaro.com/2021/8/67f579c0-5cbb-4ed5-82db-19591fa88e7c.jpg" },
-    
+
     { title: "Bam Citadel", urls: "https://images.kojaro.com/2022/1/87542b66-da10-4683-952e-a553d100eeac.jpg" },
     {
         title: "Masuleh",
@@ -39,10 +39,10 @@ export const dataImage = [
     },
     {
         title: "Bisheh Waterfall",
-        
+
         urls: "https://greetingiran.com/wp-content/uploads/2017/06/bishe-waterfall.jpg",
     },
-    
+
     {
         title: "Martian Mountains",
 

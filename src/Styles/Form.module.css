@@ -1,5 +1,5 @@
 :root{
-    --priymaryColor:rgb(222,84,60)
+    --primaryColor:rgb(222,84,60)
 }
 .container {
     color: gainsboro;
@@ -11,7 +11,7 @@
     top: -30px;
 }
 .formContainer {
-    border: 2px solid var(--priymaryColor);
+    border: 2px solid var(--primaryColor);
     border-radius: 15px;
     padding: 30px 50px;
     box-shadow: 0 5px 10px  rgb(140, 140, 140);
@@ -25,7 +25,7 @@
     font-size: 2.5em;
     margin-bottom: 25px;
     margin-top: 5px;
-    color:var(--priymaryColor);
+    color:var(--primaryColor);
 }
 .formField {
     display: flex;
@@ -36,7 +36,7 @@
 .formField > label {
     margin-bottom: 5px;
     font-size: 0.9em;
-    color:white;
+    color: var(--primaryColor);
 }
 
 .formInput {
@@ -55,7 +55,7 @@ font-size: 1.2em;
     width: 300px;
     height: 30px;
     border-radius: 7px;
-    border: 2px solid var(--priymaryColor);
+    border: 2px solid var(--primaryColor);
     padding: 0 10px;
     transition: all 0.2s ease-in;
 }
@@ -68,7 +68,7 @@ font-size: 1.2em;
     transition: all 0.2s ease-in;
 }
 .formField span {
-    background-color: var(--priymaryColor);
+    background-color: var(--primaryColor);
     display: flex;
     position: relative;
     top: 7px;
@@ -81,7 +81,7 @@ font-size: 1.2em;
 .formField:focus,
 .unCompleted:focus {
     outline: none;
-    border: 2px solid var(--priymaryColor);
+    border: 2px solid var(--primaryColor);
     line-height: 30px;
     height: 30px;
 }
@@ -95,7 +95,7 @@ font-size: 1.2em;
     align-items: flex-start;
 }
 .formField:nth-child(6) label {
-    color: var(--priymaryColor);
+    color: var(--primaryColor);
     display: flex;
     align-items: flex-end;
 }
@@ -111,7 +111,7 @@ input[type="checkbox"] {
     margin: 0 20px;
     width: 18px;
     height: 18px;
-    border:2px solid var(--priymaryColor);
+    border:2px solid var(--primaryColor);
     appearance: none;
     border-radius: 4px;
 }
@@ -128,19 +128,19 @@ input[type="checkbox"]:checked {
 }
 .formButtons button {
     padding: 12px 15px;
-    background-color: var(--priymaryColor);
+    background-color: var(--primaryColor);
     border-radius: 7px;
     font-size: 1em;
     cursor: pointer;
-    border: 1px solid var(--priymaryColor);
+    border: 1px solid var(--primaryColor);
     transition: all 0.2s linear;
     color:white;
 }
 .formButtons button:hover {
     background-color: white;
-    color: var(--priymaryColor);
-    border: 1px solid var(--priymaryColor);
-    outline-color: var(--priymaryColor);
+    color: var(--primaryColor);
+    border: 1px solid var(--primaryColor);
+    outline-color: var(--primaryColor);
 }
 .formButtons a {
     text-decoration: none;
@@ -148,16 +148,16 @@ input[type="checkbox"]:checked {
     padding: 13px 20px;
     font-size: 1em;
     background-color: white;
-    color: var(--priymaryColor);
+    color: var(--primaryColor);
     border-radius: 7px;
     cursor: pointer;
     transition: all 0.2s linear;
-    border: 1px solid var(--priymaryColor);
+    border: 1px solid var(--primaryColor);
 }
 .formButtons a:hover {
-    background-color: var(--priymaryColor);
+    background-color: var(--primaryColor);
     color: white;
-    border: 1px solid var(--priymaryColor);
+    border: 1px solid var(--primaryColor);
 }
 @media (max-width: 500px) {
     .formContainer {

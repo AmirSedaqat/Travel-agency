@@ -1,0 +1,254 @@
+.Navlink {
+    color: white;
+    border-radius: 7px;
+    border: 1px solid white;
+    padding: 7px;
+    margin: 0 10px;
+    transition: all 0.2s ease-in;
+    display: flex;
+    align-items: center;
+}
+.Navlink:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+svg {
+    margin: 0 10px;
+}
+/* Responsive */
+@media (max-width: 320px) {
+    span {
+        font-size: 10px;
+    }
+    .containerLink {
+        display: flex;
+        position: relative;
+        left: -30px;
+    }
+    .Navlink {
+        padding: 4px;
+        margin: 3px;
+        width: max-content;
+    }
+    .Navlink > svg {
+        font-size: 10px;
+        margin: 0 2px;
+    }
+
+    .search {
+        display: none;
+    }
+    .menuIcon {
+        position: relative;
+        left: -10px;
+    }
+    .logoM {
+        width: 30px;
+        position: relative;
+        top: 2px;
+        left:-25px;
+    }
+}
+@media (min-width: 320px) {
+    span {
+        font-size: 9px;
+    }
+    .containerLink {
+        display: flex;
+        position: relative;
+        left: -30px;
+    }
+    .Navlink {
+        padding: 5px;
+        margin: 3px;
+        width: max-content;
+    }
+    .Navlink > svg {
+        font-size: 13px;
+        margin: 0 2px;
+    }
+
+    .search {
+        display: none;
+    }
+    .menuIcon {
+        position: relative;
+        left: -10px;
+    }
+    .logoM {
+        width: 40px;
+        position: relative;
+        top: 2px;
+        left:-25px;
+    }
+}
+@media (min-width: 350px) {
+    span {
+        font-size: 10px;
+    }
+    .containerLink {
+        display: flex;
+        position: relative;
+        left:-35px;
+    }
+    .Navlink {
+        padding: 5px;
+        margin: 4px;
+        width: max-content;
+    }
+    .Navlink > svg {
+        font-size: 15px;
+        margin: 0 3px;
+    }
+    .search {
+        display: none;
+    }
+    .menuIcon {
+        position: relative;
+        left: -15px;
+    }
+    .logoM {
+        width: 40px;
+        position: relative;
+        top: 2px;
+        left:-25px;
+    }
+}
+@media (min-width: 380px) {
+    span {
+        font-size: 11px;
+    }
+    .Navlink {
+        padding: 6px;
+        margin: 6px;
+        width: max-content;
+    }
+    .Navlink > svg {
+        font-size: 15px;
+        margin: 0 3px;
+    }
+    .search {
+        display: none;
+    }
+    .logoM {
+        width: 40px;
+        left:-30px;
+    }
+}
+@media (min-width: 400px) {
+    span {
+        font-size: 11px;
+    }
+    .containerLink{
+        left:-25px;
+    }
+    .Navlink {
+        padding: 6px;
+        margin: 6px;
+        width: max-content;
+    }
+    .Navlink > svg {
+        font-size: 15px;
+        margin: 0 3px;
+    }
+    .search {
+        display: none;
+    }
+
+    .logoM {
+        width: 40px;
+        left:-10px;
+    }
+    .menuIcon {
+        position: relative;
+        left: -10px;
+    }
+}
+@media (min-width: 500px) {
+    span {
+        font-size: 11px;
+    }
+    .containerLink{
+        left:10px;
+    }
+    .Navlink {
+        padding: 7px;
+        margin: 7px;
+        width: max-content;
+    }
+    .Navlink > svg {
+        font-size: 17px;
+        margin: 0 5px;
+    }
+    .search {
+        display: none;
+    }
+
+    .logoM {
+        width: 40px;
+        left:40px;
+    }
+    .menuIcon {
+        position: relative;
+        left: 5px;
+    }
+}
+@media (min-width: 600px) {
+    span {
+        font-size: 11px;
+    }
+    .containerLink{
+        left:-25px;
+        margin:10px;
+        padding:0 20px;
+    }
+    .Navlink {
+        padding: 7px;
+        margin: 5px;
+        width: max-content;
+    }
+    .Navlink > svg {
+        font-size: 17px;
+        margin: 0 5px;
+    }
+    .search {
+        display: block;
+        position: relative;
+        left:-40px;
+    }
+
+    .logoM {
+        display:none;
+    }
+    .menuIcon {
+        position: relative;
+        left: -15px;
+    }
+    .menuIcon {
+        position: relative;
+        left: -15px;
+    }
+}
+@media (min-width:700px){
+    
+    .menuIcon {
+        position: relative;
+        left: 15px;
+    }
+}
+@media (max-width: 905px) {
+    .sedaghatTravelAgency{
+        display:none
+    }
+}
+@media (min-width:900px) {
+    span{
+        font-size: 15px;
+    }
+    
+}
+@media (max-width: 720px) {
+   .logoL{
+    display:none
+   }
+}

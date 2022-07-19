@@ -1,0 +1,60 @@
+.container div {
+    
+    font-size: 30px;
+}
+
+@media (max-width:320px){
+    .container{
+        width:270px;
+    }
+    .informationTour{
+        width:270px;
+        margin:20px 0;
+        word-wrap: break-word;
+       
+    }
+}
+@media (min-width:320px){
+    .container{
+        width:300px;
+    }
+    .informationTour{
+        width:300px;
+        margin:20px 0;
+        word-wrap: break-word;
+       
+    }
+}
+@media (min-width:400px){
+    .container{
+        width:350px;
+    }
+    .informationTour{
+        width:350px;
+        margin:20px 0;
+        word-wrap: break-word;
+       
+    }
+}
+@media (min-width:600px){
+    .container{
+        width:500px;
+    }
+    .informationTour{
+        width:500px;
+        margin:20px 0;
+        word-wrap: break-word;
+       
+    }
+}
+@media (min-width:800px){
+    .container{
+        width:700px;
+    }
+    .informationTour{
+        width:700px;
+        margin:20px 0;
+        word-wrap: break-word;
+       
+    }
+}

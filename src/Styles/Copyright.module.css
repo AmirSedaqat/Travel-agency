@@ -1,0 +1,18 @@
+.Copyright{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:20px;
+    background-color: rgb(214, 65, 38);
+    color:white;
+    border-top: 1px solid white;
+}
+.Copyright > svg{
+    margin:0 5px;
+}
+.hrTop{
+    border-top:1px  rgb(130, 130, 130) solid;
+    width:90%;
+    margin:0 auto;
+    padding:30px;
+}

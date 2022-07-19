@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
+// React-router-dom
 import {Link} from 'react-router-dom';
+// Styles
 import styles from '../Styles/Form.module.css';
+// React-toastify
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 

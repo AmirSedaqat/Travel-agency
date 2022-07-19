@@ -4,7 +4,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { dataImage } from "./data";
 import "../../Styles/SliderSlick.css";
-import { Typography } from "@mui/material";
 
 const SliderSlick = () => {
     const settings = {
@@ -19,13 +18,10 @@ const SliderSlick = () => {
     };
     return (
         <div className="slider-container">
-            <Typography variant="h4" component="h4" sx={{textAlign:'left',padding:"10px",marginLeft:"30px"}}>
-            Beautiful Iran 
-            </Typography>
             <Slider {...settings}>
                 {dataImage.map((item) => (
                     <div className="slider-content" key={item.title}>
-                        <img className="imgSlider" src={item.urls} alt={item.title} />
+                        <img className="img-slider" src={item.urls} alt={item.title} />
                     </div>
                 ))}
             </Slider>

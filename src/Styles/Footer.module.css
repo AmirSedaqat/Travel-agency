@@ -1,0 +1,50 @@
+.container {
+    display: flex;
+    justify-content: space-around;
+    background-color: #de543c;
+    color:white;
+}
+.content {
+    width: 300px;
+    padding: 20px;
+    margin: 10px;
+    word-wrap: break-word;
+}
+.content > h4 {
+    border-bottom: 1px solid white;
+    display: inline-block;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+.content .socialLink > a > svg {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 1px solid white;
+    color: white;
+    padding: 8px;
+    cursor: pointer;
+    margin: 10px;
+    transition: all .3s ease;
+}
+.content .socialLink > a > svg:hover {
+    padding:5px;
+}
+
+.contactUs {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+.contactUs > svg {
+    margin: 0 10px 0 0;
+}
+@media (max-width:960px){
+    .container {
+        display: flex;
+        flex-direction: column;        
+        background-color: #de543c;
+        align-items: center;
+        color:white;
+    }
+}

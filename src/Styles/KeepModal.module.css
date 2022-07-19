@@ -1,0 +1,10 @@
+.navbar{
+    width:100px;
+}
+.navar button{
+    color:white;
+    border-radius: 7px;
+    border: 1px solid white;
+    padding:7px 40px;
+    margin:0 10px;
+}

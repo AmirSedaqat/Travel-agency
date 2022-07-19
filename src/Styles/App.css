@@ -1,23 +1,30 @@
-.App{
+.App {
     background-color: rgb(241, 241, 241);
-    padding: 0 0 50px 0;
 }
-a{
+a {
     text-decoration: none;
 }
-.formLink{
-    color:white;
-    border-radius: 7px;
-    border: 1px solid white;
-    padding:7px;
-    margin:0 10px;
-}
-.formLink:hover{
-    background-color: rgba(255, 255, 255, 0.2);
-}
+
 .imgCard {
     width: 100%;
     height: 9rem;
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
+    transition: all 0.3s linear;
+}
+.imgCard:hover {
+    transform: scale(1.1);
+}
+::-webkit-scrollbar{
+    width:10px;
+}
+::-webkit-scrollbar-track{
+    background: gray;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #ff664b ;
+    border-radius: 50px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: #ff2600 ;
 }

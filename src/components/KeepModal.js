@@ -4,8 +4,10 @@ import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
 import Button from "@mui/material/Button";
 import { Typography } from "@mui/material";
+//Import
 import DatePicker from "./DatePicker";
-//MUI ICON
+// Styles
+import styles from '../Styles/KeepModal.module.css'
 const style = {
     position: "absolute",
     top: "50%",
@@ -25,9 +27,9 @@ export default function KeepModal() {
     const handleClose = () => setOpen(false);
 
     return (
-        <div>
+        <div className={styles.navar}>
 
-            <Button onClick={handleOpen} sx={{color:'white', borderRadius: '7px', border: '1px solid white',padding:'7px 40px', margin:'0 10px'}}>Book Now </Button>
+            <Button onClick={handleOpen} >Book Now </Button>
 
             <Modal keepMounted open={open} onClose={handleClose} aria-labelledby="keep-mounted-modal-title" aria-describedby="keep-mounted-modal-description">
                 <Box sx={style}>

@@ -4,7 +4,7 @@
         "name": "Visiting the sights of Iran",
         "tours": [
             {
-                "id": 1,
+                "id": "Nasir al-Mulk Mosque",
                 "name": "Nasir al-Mulk Mosque",
                 "duration": 5,
                 "rating": 5,
@@ -13,92 +13,95 @@
                 "image": "http://gravity.ir/wp-content/uploads/2014/02/Nasir-Al-Mulk-Mosque.jpg"
             },
             {
-                "id": 2,
+                "id": "Masuleh",
                 "name": "Masuleh",
                 "duration": 13,
-                "rating": 4.3,
+                "rating": 4.2,
                 "numberOfReviews": 641,
                 "price": 828,
-                "image": "https://images.unsplash.com/photo-1580060366892-f079c2e1fa17?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80"
+                "image": "https://images.kojaro.com/2020/10/8d5f02e1-ac71-4ac8-9963-632601227811.jpg"
             },
             {
-                "id": 3,
+                "id": "Bisheh Waterfall",
                 "name": "Bisheh Waterfall",
                 "duration": 4,
-                "rating": 4.6,
+                "rating": 3,
                 "numberOfReviews": 1033,
                 "price": 244,
                 "image": "https://greetingiran.com/wp-content/uploads/2017/06/bishe-waterfall.jpg"
             },
+            { "name": "Eram Garden", "image": "https://images.kojaro.com/2020/9/4b9a0129-278c-4838-9ed5-7d647d75d299.jpg" ,
+            "id": "Eram Garden",
+            "duration": 16.5,
+            "rating": 4,
+            "numberOfReviews": 574,
+            "price": 1350},
             {
-                "id": 4,
+                "id": "Golestan Palace",
                 "name": "Golestan Palace",
                 "duration": 2,
-                "rating":3.6,
+                "rating": 5,
                 "numberOfReviews": 192,
                 "price": 178,
                 "image": "https://images.kojaro.com/2020/9/65963fa4-b007-4267-8520-8309fb2e00ad.jpg"
             },
             {
-                "id": 9,
+                "id": "Mahneshan Mountains",
                 "name": "Mahneshan Mountains",
                 "duration": 9,
-                "rating": 5,
+                "rating": 4,
                 "numberOfReviews": 1645,
                 "price": 1087,
                 "image": "https://www.eligasht.com/Blog/wp-content/uploads/2018/05/zanjan-mount.jpg"
             },
             {
-                "id": 10,
+                "id":"Si-o-Se-Pol Bridge",
                 "name": "Si-o-Se-Pol Bridge",
                 "duration": 7,
-                "rating": 4,
+                "rating": 3,
                 "numberOfReviews": 595,
                 "price": 583,
                 "image": "https://www.citymity.com/pu/p/15/05/AA2ghICH3nGpa9M17zMP327.jpeg"
             },
             {
-                "id": 11,
+                "id": "Milad Tower",
                 "name": "Milad Tower",
                 "duration": 5,
-                "rating": 4.3,
-                "numberOfReviews": 2074,
+                "rating": 4.2,
+                "numberOfReviews": 904,
                 "price": 210,
                 "image": "https://images.kojaro.com/2020/9/97670573-6d40-48e0-90f1-3b96e837f6b4.jpg"
-            }
-            ,
+            },
             {
-                "id": 8,
+                "id": "Ferdows Garden",
                 "name": "Ferdows Garden",
                 "duration": 2,
-                "rating": 3.4,
+                "rating": 3.2,
                 "numberOfReviews": 95,
                 "price": 133,
                 "image": "https://images.kojaro.com/2016/11/412ed57a-3586-4d34-a85c-5ceb81c55d92.jpg"
-            }
-            
-            ,
+            },
+
             {
-                "id": 6,
+                "id": "Tomb of Ferdowsi",
                 "name": "Tomb of Ferdowsi",
                 "duration": 3.5,
                 "rating": 4.2,
-                "numberOfReviews":321,
+                "numberOfReviews": 321,
                 "price": 300,
                 "image": "https://aoapedia.ir/wp-content/uploads/2022/04/ESLAHI-D3X0988.jpg"
             },
             {
-                "id": 7,
+                "id": "Village Kandovan",
                 "name": "Village Kandovan",
                 "duration": 11,
                 "rating": 4,
                 "numberOfReviews": 673,
                 "price": 640,
                 "image": "https://www.eligasht.com/Blog/wp-content/uploads/2017/05/kandovan.jpg"
-            }
-            ,
+            },
             {
-                "id": 12,
+                "id": "Lake Chort",
                 "name": "Lake Chort",
                 "duration": 4,
                 "rating": 5,
@@ -107,16 +110,30 @@
                 "image": "http://upload.wikimedia.org/wikipedia/commons/5/5c/Lake_miansheh.jpg"
             },
             {
-                "id": 5,
                 "name": "Martian Mountains",
+                "id": "Martian Mountains",
                 "duration": 6.5,
-                "rating": 4.7,
+                "rating": 5,
                 "numberOfReviews": 467,
                 "price": 978,
                 "image": "https://media.freena.ir/uploads/org/153794186637372600.jpg"
-            }
-            
+            },
+            {
+                "name": "Aali Qapu Mansion",
+                "image": "https://images.kojaro.com/2020/11/ef218303-02ab-4e7b-bd88-72fcc789b97f.jpg",
+                "id": "Aali Qapu Mansion",
+                "duration":2.5,
+                "rating": 4,
+                "numberOfReviews": 638,
+                "price": 440
+            },
+
+            { "name": "Bam Citadel", "image": "https://images.kojaro.com/2022/1/87542b66-da10-4683-952e-a553d100eeac.jpg",
+            "id": "Bam Citadel",
+            "duration": 3,
+            "rating": 5,
+            "numberOfReviews": 1167,
+            "price": 700 }
         ]
     }
-    
 ]
